@@ -455,7 +455,7 @@ function conferences_del($account){
 	return FreePBX::Conferences()->deleteConference($account);
 }
 
-function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0, $timeout=21600){
-	return FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$timeout);
+function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0,$language='',$timeout=21600){
+	return FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language,$timeout);
 }
 ?>
